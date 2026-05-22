@@ -9,6 +9,7 @@ import MenuSection from '@/components/sections/MenuSection'
 import BrandSection from '@/components/sections/BrandSection'
 import LocationSection from '@/components/sections/LocationSection'
 import DeliverySection from '@/components/sections/DeliverySection'
+import FranchiseSection from '@/components/sections/FranchiseSection'
 
 // Ref is created here and passed to Hero (attaches to CTA button)
 // and StickyOrderButton (watches that element via IntersectionObserver).
@@ -23,6 +24,7 @@ export default function HomePage() {
         <DeliverySection />
         <MenuSection />
         <BrandSection />
+        <FranchiseSection />
         <LocationSection />
       </main>
       <Footer />
