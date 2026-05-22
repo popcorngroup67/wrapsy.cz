@@ -1,0 +1,76 @@
+{
+  "redirects": [
+    {
+      "source": "/instagram",
+      "has": [{ "type": "host", "value": "go.wrapsy.cz" }],
+      "destination": "https://instagram.com/wrapsycz",
+      "permanent": false
+    },
+    {
+      "source": "/facebook",
+      "has": [{ "type": "host", "value": "go.wrapsy.cz" }],
+      "destination": "https://facebook.com/wrapsy",
+      "permanent": false
+    },
+    {
+      "source": "/social",
+      "has": [{ "type": "host", "value": "go.wrapsy.cz" }],
+      "destination": "https://instagram.com/wrapsycz",
+      "permanent": false
+    },
+    {
+      "source": "/menu",
+      "has": [{ "type": "host", "value": "go.wrapsy.cz" }],
+      "destination": "https://wrapsy.cz/menu",
+      "permanent": false
+    },
+    {
+      "source": "/objednat",
+      "has": [{ "type": "host", "value": "go.wrapsy.cz" }],
+      "destination": "https://wrapsy.cz",
+      "permanent": false
+    },
+    {
+      "source": "/feedback",
+      "has": [{ "type": "host", "value": "go.wrapsy.cz" }],
+      "destination": "https://wrapsy.cz",
+      "permanent": false
+    },
+    {
+      "source": "/stolek",
+      "has": [{ "type": "host", "value": "go.wrapsy.cz" }],
+      "destination": "https://wrapsy.cz",
+      "permanent": false
+    },
+    {
+      "source": "/vchod",
+      "has": [{ "type": "host", "value": "go.wrapsy.cz" }],
+      "destination": "https://wrapsy.cz",
+      "permanent": false
+    },
+    {
+      "source": "/obal",
+      "has": [{ "type": "host", "value": "go.wrapsy.cz" }],
+      "destination": "https://wrapsy.cz",
+      "permanent": false
+    },
+    {
+      "source": "/uctenka",
+      "has": [{ "type": "host", "value": "go.wrapsy.cz" }],
+      "destination": "https://wrapsy.cz",
+      "permanent": false
+    },
+    {
+      "source": "/banner",
+      "has": [{ "type": "host", "value": "go.wrapsy.cz" }],
+      "destination": "https://wrapsy.cz",
+      "permanent": false
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "go.wrapsy.cz" }],
+      "destination": "https://wrapsy.cz",
+      "permanent": false
+    }
+  ]
+}
