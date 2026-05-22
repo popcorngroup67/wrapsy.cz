@@ -40,12 +40,6 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Falafel, hummus, grilovaná zelenina, tahini',
     category: 'wrapy',
   },
-  {
-    id: 'caesar',
-    name: 'Caesar',
-    description: 'Kuřecí, caesar dressing, parmazán, krutony',
-    category: 'wrapy',
-  },
   // Bowls
   {
     id: 'power-bowl',
@@ -63,6 +57,12 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 'veggie-bowl',
     name: 'Veggie Bowl',
     description: 'Falafel, quinoa, grilovaná zelenina, tahini',
+    category: 'bowls',
+  },
+  {
+    id: 'teriyaki-bowl',
+    name: 'Teriyaki Bowl',
+    description: 'Kuřecí, rýže, teriyaki omáčka, edamame, sezam',
     category: 'bowls',
   },
   // Fries
@@ -84,6 +84,12 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Lanýžový olej, parmazán, pažitka',
     category: 'fries',
   },
+  {
+    id: 'spicy-fries',
+    name: 'Spicy',
+    description: 'Chilli koření, sriracha mayo',
+    category: 'fries',
+  },
   // Wings
   {
     id: 'buffalo-wings',
@@ -101,6 +107,12 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 'bbq-smoke-wings',
     name: 'BBQ Smoke',
     description: 'Kouřové BBQ, pickles (6 ks)',
+    category: 'wings',
+  },
+  {
+    id: 'lemon-pepper-wings',
+    name: 'Lemon Pepper',
+    description: 'Citronový pepř, máslová glazura (6 ks)',
     category: 'wings',
   },
 ]
