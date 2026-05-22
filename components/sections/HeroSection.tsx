@@ -9,14 +9,14 @@ export default function HeroSection({ ctaRef }: Props) {
   return (
     <section
       id="top"
-      className="relative flex items-center justify-center min-h-screen text-center px-6"
+      className="relative flex items-center justify-center min-h-screen text-center px-6 overflow-hidden"
     >
       {/* Orange ambient glow — reuses pulse keyframe from globals.css */}
       <div
         className="absolute pointer-events-none"
         style={{
-          width: '700px',
-          height: '700px',
+          width: 'min(700px, 100vw)',
+          height: 'min(700px, 100vw)',
           borderRadius: '50%',
           background: 'radial-gradient(circle, rgba(236,119,35,0.12) 0%, transparent 70%)',
           animation: 'pulse 7s ease-in-out infinite',

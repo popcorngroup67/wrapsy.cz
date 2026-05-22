@@ -32,12 +32,12 @@ export default function MenuCard({ item }: Props) {
         </span>
       </div>
 
-      <div className="p-4 flex flex-col gap-1">
+      <div className="p-3 md:p-4 flex flex-col gap-1">
         <h3
           style={{
             fontFamily: 'var(--font-display)',
             fontWeight: 900,
-            fontSize: '18px',
+            fontSize: 'clamp(14px, 3vw, 18px)',
             letterSpacing: '0.02em',
             textTransform: 'uppercase',
             color: '#f4ede4',

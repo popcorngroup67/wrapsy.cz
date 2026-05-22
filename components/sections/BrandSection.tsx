@@ -23,7 +23,7 @@ export default function BrandSection() {
       className="py-24 px-6"
       style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}
     >
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-start">
         {/* Brand story */}
         <div className="flex flex-col gap-8">
           <h2

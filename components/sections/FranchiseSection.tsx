@@ -10,7 +10,7 @@ export default function FranchiseSection() {
       >
         {/* Left — visual block */}
         <div
-          className="relative flex flex-col justify-end p-12 min-h-72"
+          className="relative flex flex-col justify-end p-8 md:p-12 min-h-64 md:min-h-72"
           style={{
             background: 'linear-gradient(135deg, #1a0f00 0%, #2d1a00 50%, #0a0a0a 100%)',
           }}
@@ -55,7 +55,7 @@ export default function FranchiseSection() {
 
         {/* Right — description + CTA */}
         <div
-          className="flex flex-col justify-center p-12"
+          className="flex flex-col justify-center p-8 md:p-12"
           style={{ background: 'rgba(255,255,255,0.02)', borderLeft: '1px solid rgba(255,255,255,0.08)' }}
         >
           <p
