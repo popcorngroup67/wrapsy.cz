@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import HomePage from '@/components/HomePage'
 
 const OPEN_DATE = new Date('2026-06-16T10:00:00+02:00')
 
@@ -9,6 +10,7 @@ function useCountdown(target: Date) {
   const calc = () => {
     const diff = Math.max(0, target.getTime() - Date.now())
     return {
+      done:    diff === 0,
       days:    Math.floor(diff / 86400000),
       hours:   Math.floor((diff % 86400000) / 3600000),
       minutes: Math.floor((diff % 3600000) / 60000),
@@ -25,7 +27,9 @@ function useCountdown(target: Date) {
 
 export default function ComingSoonPage() {
   const marqueeWords = Array(6).fill(['Wrap', 'Bowl', 'Fries', 'Wings']).flat()
-  const { days, hours, minutes, seconds } = useCountdown(OPEN_DATE)
+  const { done, days, hours, minutes, seconds } = useCountdown(OPEN_DATE)
+
+  if (done) return <HomePage />
 
   return (
     <>
