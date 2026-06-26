@@ -30,7 +30,7 @@ export default function MenuFilter({ active, onChange }: Props) {
               transition: 'all 0.2s',
             }}
           >
-            {cat.label}
+            <span style={{ marginRight: '6px' }}>{cat.emoji}</span>{cat.label}
           </button>
         )
       })}

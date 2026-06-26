@@ -21,11 +21,11 @@ export default function HomePage() {
       <Navbar />
       <main>
         <HeroSection ctaRef={heroCTARef} />
-        <DeliverySection />
         <MenuSection />
         <BrandSection />
         <FranchiseSection />
         <LocationSection />
+        <DeliverySection />
       </main>
       <Footer />
       <StickyOrderButton heroCTARef={heroCTARef} />
