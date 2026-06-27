@@ -99,17 +99,6 @@ export default function MenuCard({ item }: Props) {
         >
           {item.description}
         </p>
-        <p
-          style={{
-            fontFamily: 'var(--font-display)',
-            fontWeight: 900,
-            fontSize: '16px',
-            color: '#ec7723',
-            marginTop: '8px',
-          }}
-        >
-          {item.price} Kč
-        </p>
       </div>
     </div>
   )

@@ -1,4 +1,4 @@
-export type MenuCategory = 'wrapy' | 'pizzy' | 'bowls' | 'kyble' | 'prilohy'
+export type MenuCategory = 'wrapy' | 'pizzy' | 'bowls' | 'kyble' | 'prilohy' | 'omacky'
 
 export type MenuItem = {
   id: string
@@ -17,6 +17,7 @@ export const MENU_CATEGORIES: { id: MenuCategory; label: string; emoji: string }
   { id: 'bowls',   label: 'Bowls',       emoji: '🥣' },
   { id: 'kyble',   label: 'Kyble',       emoji: '🍗' },
   { id: 'prilohy', label: 'Přílohy',     emoji: '🍟' },
+  { id: 'omacky',  label: 'Omáčky',      emoji: '🥫' },
 ]
 
 export const MENU_ITEMS: MenuItem[] = [
@@ -207,5 +208,46 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 65,
     category: 'prilohy',
     image: '/food/kureci-popcorn.jpg',
+  },
+  // OMÁČKY
+  {
+    id: 'omacka-chipotle',
+    name: 'Chipotle omáčka',
+    description: 'Krémová chipotle omáčka.',
+    price: 19,
+    category: 'omacky',
+    image: '/food/omacka-chipotle.jpg',
+  },
+  {
+    id: 'omacka-mayo',
+    name: 'Majonéza',
+    description: 'Klasická majonéza.',
+    price: 19,
+    category: 'omacky',
+    image: '/food/omacka-mayo.jpg',
+  },
+  {
+    id: 'omacka-brusinky',
+    name: 'Brusinková omáčka',
+    description: 'Sladko-kyselá brusinková omáčka.',
+    price: 19,
+    category: 'omacky',
+    image: '/food/omacka-brusinky.jpg',
+  },
+  {
+    id: 'omacka-bbq',
+    name: 'BBQ omáčka',
+    description: 'Kouřová BBQ omáčka.',
+    price: 19,
+    category: 'omacky',
+    image: '/food/omacka-bbq.jpg',
+  },
+  {
+    id: 'omacka-cesnekova',
+    name: 'Česneková omáčka',
+    description: 'Krémová česneková omáčka.',
+    price: 19,
+    category: 'omacky',
+    image: '/food/omacka-cesnekova.jpg',
   },
 ]
