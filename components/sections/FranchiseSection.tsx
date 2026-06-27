@@ -74,7 +74,7 @@ export default function FranchiseSection() {
 
           <div className="flex flex-wrap gap-4 items-center">
             <a
-              href="mailto:franchise@wrapsy.cz"
+              href="mailto:ahoj@wrapsy.cz"
               style={{
                 fontFamily: 'var(--font-display)',
                 fontWeight: 900,
@@ -101,7 +101,7 @@ export default function FranchiseSection() {
                 color: 'rgba(244,237,228,0.25)',
               }}
             >
-              franchise@wrapsy.cz
+              ahoj@wrapsy.cz
             </span>
           </div>
         </div>
