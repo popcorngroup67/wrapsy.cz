@@ -110,6 +110,14 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'pizzy',
     image: '/food/pizza-cheddar-melt.jpg',
   },
+  {
+    id: 'ham-chicken-bbq-pizza',
+    name: 'Ham Chicken BBQ Pizza',
+    description: 'Sugo, mozzarella, šunka, kuřecí stripsy a BBQ omáčka.',
+    price: 239,
+    category: 'pizzy',
+    image: '/food/pizza-ham-chicken-bbq.jpg',
+  },
   // BOWLS
   {
     id: 'classic-fries-bowl',
