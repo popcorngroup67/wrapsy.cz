@@ -84,6 +84,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Kuřecí kebab, hranolky, cheddar omáčka, chipotle omáčka, smažená cibulka, čerstvá cibule, cheddar plátky a ledový salát.',
     price: 189,
     category: 'wrapy',
+    image: '/food/loaded-fries-wrap.jpg',
   },
   // PIZZY
   {
