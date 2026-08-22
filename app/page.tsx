@@ -1,5 +1,5 @@
 import HomePage from '@/components/HomePage'
-import { ADDRESS, RESTIA_URL, SOCIAL } from '@/lib/constants'
+import { ADDRESS, PHONE, RESTIA_URL, SOCIAL } from '@/lib/constants'
 
 // Site is live. The holding page lives in components/ComingSoonPage.tsx if ever
 // needed again — re-gate here and set NEXT_PUBLIC_SITE_MODE to bring it back.
@@ -13,6 +13,7 @@ const restaurantSchema = {
     'WRAPSY Lovosice — čerstvé wrapy, křupavé stripsy, pizza 40 cm, bowls a kebab. Objednej online s rozvozem, nebo přijď na 8. května 25, Lovosice.',
   url: 'https://wrapsy.cz',
   image: 'https://wrapsy.cz/png/full-logo.png',
+  telephone: PHONE.e164,
   servesCuisine: ['Street food', 'Kebab', 'Pizza', 'Rychlé občerstvení'],
   priceRange: '100–200 Kč',
   address: {

@@ -1,4 +1,4 @@
-import { ADDRESS, HOURS } from '@/lib/constants'
+import { ADDRESS, HOURS, PHONE } from '@/lib/constants'
 
 export default function LocationSection() {
   return (
@@ -49,6 +49,30 @@ export default function LocationSection() {
               >
                 {ADDRESS.street}<br />
                 {ADDRESS.zip} {ADDRESS.city}
+              </a>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <span
+                style={{
+                  fontSize: '10px',
+                  letterSpacing: '0.3em',
+                  textTransform: 'uppercase',
+                  color: '#ec7723',
+                }}
+              >
+                Telefon
+              </span>
+              <a
+                href={PHONE.href}
+                style={{
+                  fontSize: '20px',
+                  color: '#f4ede4',
+                  textDecoration: 'none',
+                  lineHeight: '1.4',
+                }}
+              >
+                {PHONE.display}
               </a>
             </div>
 

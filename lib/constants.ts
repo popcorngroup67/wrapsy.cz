@@ -14,6 +14,12 @@ export const HOURS = [
   { days: 'Ne',      time: 'Zavřeno' },
 ]
 
+export const PHONE = {
+  display: '+420 606 724 681',
+  href: 'tel:+420606724681',
+  e164: '+420606724681',
+}
+
 export const SOCIAL = {
   instagram: 'https://instagram.com/wrapsycz',
   instagramHandle: '@wrapsycz',
