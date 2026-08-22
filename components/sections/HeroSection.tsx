@@ -66,7 +66,7 @@ export default function HeroSection({ ctaRef }: Props) {
               lineHeight: 1.8,
             }}
           >
-            Wrapy, bowls, fries a wings — rychle, výrazně, bez kompromisů.
+            Wrapy, pizza 40 cm, bowls a kebab — rychle a výrazně, přímo v Lovosicích.
           </p>
 
           <div className="flex flex-wrap gap-4 items-center justify-center md:justify-start">

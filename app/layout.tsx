@@ -11,15 +11,16 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://wrapsy.cz'),
 
   title: {
-    default: 'WRAPSY — Packed with Flavor',
-    template: '%s | WRAPSY',
+    default: 'WRAPSY Lovosice — wrapy, pizza 40 cm, bowls & kebab',
+    template: '%s | WRAPSY Lovosice',
   },
   description:
-    'WRAPSY — moderní street food chain z Lovosic. Čerstvé wrapy, bowls, fries a wings. Objednávej online nebo nás navštiv na 8. května 25, Lovosice.',
+    'WRAPSY Lovosice — čerstvé wrapy, křupavé stripsy, pizza 40 cm, bowls a kebab. Objednej online s rozvozem, nebo přijď na 8. května 25, Lovosice.',
   keywords: [
-    'WRAPSY', 'wrapsy', 'wrap', 'wrapy', 'bowls', 'fries', 'wings',
-    'street food', 'Lovosice', 'fastfood', 'objednat online', 'jídlo',
-    'Wolt', 'foodora', 'Bolt Food', 'Jídlopodnos',
+    'WRAPSY', 'wrapsy', 'wrapsy Lovosice', 'wrap', 'wrapy', 'wrapy Lovosice',
+    'kebab', 'kebab Lovosice', 'pizza Lovosice', 'pizza 40 cm', 'bowls',
+    'street food Lovosice', 'rychlé občerstvení Lovosice', 'rozvoz jídla Lovosice',
+    'jídlo Lovosice', 'objednat online', 'Wolt', 'Foodora', 'Bolt Food',
   ],
 
   // Canonical + alternates
@@ -51,9 +52,9 @@ export const metadata: Metadata = {
     locale: 'cs_CZ',
     url: 'https://wrapsy.cz',
     siteName: 'WRAPSY',
-    title: 'WRAPSY — Packed with Flavor',
+    title: 'WRAPSY Lovosice — wrapy, pizza 40 cm, bowls & kebab',
     description:
-      'Moderní street food chain. Čerstvé wrapy, bowls, fries a wings. Lovosice.',
+      'Čerstvé wrapy, křupavé stripsy, pizza 40 cm, bowls a kebab v Lovosicích. Objednej online s rozvozem.',
     images: [
       {
         url: '/png/full-logo.png',
@@ -67,8 +68,8 @@ export const metadata: Metadata = {
   // Twitter / X
   twitter: {
     card: 'summary_large_image',
-    title: 'WRAPSY — Packed with Flavor',
-    description: 'Moderní street food chain. Čerstvé wrapy, bowls, fries a wings.',
+    title: 'WRAPSY Lovosice — wrapy, pizza 40 cm, bowls & kebab',
+    description: 'Čerstvé wrapy, stripsy, pizza 40 cm, bowls a kebab v Lovosicích. Objednej online.',
     images: ['/png/full-logo.png'],
   },
 
