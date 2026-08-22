@@ -26,7 +26,7 @@ export default function Navbar() {
       style={{
         background: scrolled ? 'rgba(10,10,10,0.95)' : 'transparent',
         backdropFilter: scrolled ? 'blur(12px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(255,255,255,0.06)' : 'none',
+        borderBottom: `1px solid ${scrolled ? 'rgba(255,255,255,0.06)' : 'transparent'}`,
       }}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
