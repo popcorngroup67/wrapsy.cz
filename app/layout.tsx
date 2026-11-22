@@ -1,6 +1,17 @@
 import type { Metadata, Viewport } from 'next'
+import { Outfit } from 'next/font/google'
 import './globals.css'
 import CookieConsent from '@/components/consent/CookieConsent'
+
+// Písma se hostují z vlastní domény — žádný request na Google (IP návštěvníka).
+// Outfit přes next/font; Big Shoulders Display jako @font-face v globals.css
+// (v next/font/google už je jen sloučená „Big Shoulders“ s osou opsz, vypadá jinak).
+const outfit = Outfit({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['300', '400', '500'],
+  display: 'swap',
+  variable: '--font-outfit',
+})
 
 export const viewport: Viewport = {
   themeColor: '#0a0a0a',
@@ -87,18 +98,25 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="cs">
+    <html lang="cs" className={outfit.variable}>
       <head>
-        {/* Google Fonts — Big Shoulders Display (headings) + Outfit (body) */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300;400;500&display=swap"
-          rel="stylesheet"
+          rel="preload"
+          href="/fonts/big-shoulders-display-900-latin.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
         />
       </head>
       <body>
-        {/* Lišta jako první v DOM — klávesnicí dosažitelná hned na začátku */}
+        <a
+          href="#obsah"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[1000] focus:px-4 focus:py-3 focus:outline-2 focus:outline-offset-2 focus:outline-[#f4ede4]"
+          style={{ background: '#ec7723', color: '#0a0a0a', fontWeight: 500 }}
+        >
+          Přeskočit na obsah
+        </a>
+        {/* Lišta hned za skip linkem — klávesnicí dosažitelná na začátku */}
         <CookieConsent />
         {children}
       </body>

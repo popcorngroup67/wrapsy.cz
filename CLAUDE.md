@@ -8,9 +8,12 @@ Otevřené body: [`TODO.md`](TODO.md). Původní spec a plán: `docs/superpowers
 - Next.js 16 (App Router, Turbopack), React 19, Tailwind 4, TypeScript. Jen **npm**.
 - Repo `popcorngroup67/wrapsy.cz`, Vercel pod `team@popcorngroup.cz`.
 - ⚠️ **Push do `main` = okamžité nasazení živého webu.** Commit i push jen po Lukyho výslovném „ano“.
-- `package-lock.json` je mírně rozjetý s `package.json` (`npm ci` padá na `@emnapi/wasi-threads`).
-  Lokálně `npm install --no-package-lock`, ať se lockfile nemění bez důvodu.
 - `go.wrapsy.cz` = přesměrování z QR kódů (`vercel.json`). Neměnit cíle bez klienta — jsou vytištěné.
+- Písma jen z vlastní domény: Outfit přes `next/font/google`, Big Shoulders Display jako
+  `@font-face` z `public/fonts/` (v `globals.css`). Žádné odkazy na `fonts.googleapis.com` —
+  posílaly by IP návštěvníka Googlu bez souhlasu.
+- Google Maps jen přes `components/ui/MapEmbed.tsx` (načte se po kliknutí). Žádné další
+  iframy třetích stran bez stejného řešení.
 
 ## Cookies a analytika — neobcházet
 
@@ -23,7 +26,7 @@ Otevřené body: [`TODO.md`](TODO.md). Původní spec a plán: `docs/superpowers
   pouhé přepsání localStorage nechá GA měřit dál (chyba vzoru z webu Mostu).
 - Žádný další tracking (pixel, Hotjar, …) mimo tuhle komponentu a bez nové kategorie v liště.
 - „Přijmout vše“ a „Odmítnout“ musí zůstat vizuálně rovnocenné.
-- Lišta je první v `<body>` kvůli pořadí tabulátoru.
+- Pořadí na začátku `<body>`: skip link „Přeskočit na obsah“ (`#obsah` = `<main>`), hned za ním lišta.
 - Při změně nástrojů aktualizovat `app/ochrana-osobnich-udaju/page.tsx` a zvednout
   `CONSENT_VERSION` (všem se lišta ukáže znovu).
 

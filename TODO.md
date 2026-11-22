@@ -1,25 +1,9 @@
 # TODO — wrapsy.cz
 
-## Rozhodnout / schválit
-
-- ❓ Google Fonts z `fonts.googleapis.com` předávají IP Googlu bez souhlasu. Návrh: přejít na
-  `next/font/google` (self-hosting, žádný request na Google, i rychlejší).
-
-## Čeká na klienta (WRAPSY)
-
-- 📧 Potvrdit, zda berou objednávky po telefonu (jméno, adresa) — pak doplnit účel do zásad.
-- 📧 Potvrdit, že `ahoj@wrapsy.cz` je správný kontakt pro GDPR dotazy (vzato ze sekce franšíza).
-
 ## Po nasazení
 
 - 🔨 Na Vercelu nastavit `NEXT_PUBLIC_GA_ID=G-8KJ4RMF5BX` (production + preview + development) —
   volitelné, kód má fallback; projeví se až dalším buildem.
-- 🔨 V GA4 *V reálném čase* zkontrolovat, že návštěvy přicházejí (test z prohlížeče agenta se tam nemusí započítat).
-
-## Mimo rozsah, zjištěno při práci
-
-- 🔨 Chybí „Přeskočit na obsah“ (skip link) jako první fokusovatelný prvek.
-- 🔨 Srovnat `package-lock.json` s `package.json` (`npm ci` padá) — samostatný commit.
 
 ## Údaje
 
@@ -36,3 +20,7 @@
 - ✅ 23. 11. 2026 — provozovatel doplněn do zásad a patičky (IČO od Lukyho, zbytek z ARES:
   CIDAD.YOSEF s.r.o., Dr. Davida Bechera 907/27, 360 01 Karlovy Vary, C 39387 KS Plzeň);
   zásady přidány do sitemap.xml.
+- ✅ 23. 11. 2026 — Luky potvrdil: `ahoj@wrapsy.cz` je kontakt pro GDPR; telefonické objednávky berou → doplněno do zásad.
+- ✅ 23. 11. 2026 — písma z vlastní domény (Outfit přes next/font, Big Shoulders Display v `public/fonts/`),
+  skip link „Přeskočit na obsah“, `package-lock.json` srovnaný (`npm ci` prochází).
+- ✅ 23. 11. 2026 — GA4 *V reálném čase* (property 565415511) přijímá data: 2 aktivní uživatelé za 30 min, události page_view, first_visit, session_start, scroll, click.

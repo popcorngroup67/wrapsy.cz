@@ -19,7 +19,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main id="obsah" tabIndex={-1} className="outline-none">
         <HeroSection ctaRef={heroCTARef} />
         <MenuSection />
         <BrandSection />

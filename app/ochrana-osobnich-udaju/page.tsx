@@ -21,7 +21,7 @@ const h2: React.CSSProperties = {
 
 export default function PrivacyPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16" style={{ lineHeight: 1.65, fontSize: '16px' }}>
+    <main id="obsah" tabIndex={-1} className="max-w-3xl mx-auto px-6 py-16 outline-none" style={{ lineHeight: 1.65, fontSize: '16px' }}>
       <Link href="/" style={{ color: '#ec7723', fontSize: '13px', letterSpacing: '0.1em' }}>
         ← Zpět na WRAPSY
       </Link>
@@ -80,11 +80,19 @@ export default function PrivacyPage() {
           .
         </p>
 
+        <h2 style={h2}>Objednávky po telefonu</h2>
+        <p>
+          Když si objednáš po telefonu, potřebujeme tvé jméno, telefonní číslo, objednávku
+          a u rozvozu adresu doručení. Údaje použijeme jen k vyřízení a doručení objednávky
+          a uchováváme je jen po dobu, kterou to vyžaduje. Právní základ: plnění smlouvy
+          (tvé objednávky).
+        </p>
+
         <h2 style={h2}>Obsah třetích stran</h2>
         <p>
-          Web načítá písma ze služby Google Fonts — tvůj prohlížeč se při tom spojí se
-          servery Googlu a předá jim tvou IP adresu. Mapu Google Maps načteme až poté, co
-          klikneš na „Zobrazit mapu“; Google pak může uložit své cookies. Odkazy na
+          Mapu Google Maps načteme až poté, co klikneš na „Zobrazit mapu“. Tvůj prohlížeč
+          se pak spojí se servery Googlu, předá jim tvou IP adresu a Google může uložit své
+          cookies. Písma hostujeme sami, k Googlu se kvůli nim nepřipojuješ. Odkazy na
           Instagram a rozvozové služby (Wolt, Foodora, Bolt Food, Jídlo pod nos) a na
           online objednávky přes Restia vedou na jejich vlastní stránky — údaje, které tam
           zadáš, zpracovávají tyto služby jako samostatní správci podle svých zásad.
