@@ -29,3 +29,12 @@ export const SOCIAL = {
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-8KJ4RMF5BX'
 
 export const PRIVACY_PATH = '/ochrana-osobnich-udaju'
+
+// Provozovatel (ARES, ověřeno 23. 11. 2026)
+export const COMPANY = {
+  name: 'CIDAD.YOSEF s.r.o.',
+  ico: '07198787',
+  seat: 'Dr. Davida Bechera 907/27, 360 01 Karlovy Vary',
+  register: 'C 39387 vedená u Krajského soudu v Plzni',
+  email: 'ahoj@wrapsy.cz',
+}

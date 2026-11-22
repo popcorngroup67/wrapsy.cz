@@ -7,17 +7,14 @@
 
 ## Čeká na klienta (WRAPSY)
 
-- 📧 Údaje správce do `app/ochrana-osobnich-udaju/page.tsx` (`CONTROLLER`): obchodní firma /
-  jméno, **IČO**, **sídlo**, **kontaktní e-mail** pro GDPR + datum platnosti. Teď tam jsou `[DOPLNIT]`.
 - 📧 Potvrdit, zda berou objednávky po telefonu (jméno, adresa) — pak doplnit účel do zásad.
-- 📧 IČO a sídlo provozovatele i do patičky (povinná identifikace podnikatele).
+- 📧 Potvrdit, že `ahoj@wrapsy.cz` je správný kontakt pro GDPR dotazy (vzato ze sekce franšíza).
 
 ## Po nasazení
 
 - 🔨 Na Vercelu nastavit `NEXT_PUBLIC_GA_ID=G-8KJ4RMF5BX` (production + preview + development) —
   volitelné, kód má fallback; projeví se až dalším buildem.
 - 🔨 V GA4 *V reálném čase* zkontrolovat, že návštěvy přicházejí (test z prohlížeče agenta se tam nemusí započítat).
-- 🔨 Přidat `/ochrana-osobnich-udaju` do `public/sitemap.xml`, až budou doplněné údaje správce.
 
 ## Mimo rozsah, zjištěno při práci
 
@@ -36,3 +33,6 @@
   „Odmítnout“ z patičky → reload, `_ga*` smazané.
 - ✅ 23. 11. 2026 — Google Maps se načítá až po kliknutí na „Zobrazit mapu“ (`components/ui/MapEmbed.tsx`),
   do té doby žádný request na google.com; zásady upravené.
+- ✅ 23. 11. 2026 — provozovatel doplněn do zásad a patičky (IČO od Lukyho, zbytek z ARES:
+  CIDAD.YOSEF s.r.o., Dr. Davida Bechera 907/27, 360 01 Karlovy Vary, C 39387 KS Plzeň);
+  zásady přidány do sitemap.xml.

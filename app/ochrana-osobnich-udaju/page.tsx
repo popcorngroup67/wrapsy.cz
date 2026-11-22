@@ -1,15 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CookieSettingsButton } from '@/components/consent/CookieConsent'
-import { PHONE, PRIVACY_PATH } from '@/lib/constants'
-
-// ⚠️ Údaje o správci jsou zástupné — doplní klient (viz TODO.md).
-const CONTROLLER = {
-  name: '[DOPLNIT: obchodní firma / jméno provozovatele]',
-  ico: '[DOPLNIT: IČO]',
-  seat: '[DOPLNIT: sídlo]',
-  email: '[DOPLNIT: kontaktní e-mail]',
-}
+import { COMPANY, PHONE, PRIVACY_PATH } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Ochrana osobních údajů a cookies',
@@ -50,9 +42,17 @@ export default function PrivacyPage() {
       <div style={{ color: 'rgba(244,237,228,0.8)' }}>
         <h2 style={h2}>Kdo údaje zpracovává</h2>
         <p>
-          Správcem osobních údajů je {CONTROLLER.name}, IČO {CONTROLLER.ico}, se sídlem{' '}
-          {CONTROLLER.seat} (dále „WRAPSY“, „my“). Kontakt pro vše, co se týká osobních údajů:{' '}
-          {CONTROLLER.email}, tel. <a href={PHONE.href} className="underline">{PHONE.display}</a>.
+          Správcem osobních údajů je {COMPANY.name}, IČO {COMPANY.ico}, se sídlem{' '}
+          {COMPANY.seat}, zapsaná v obchodním rejstříku pod sp. zn. {COMPANY.register}{' '}
+          (dále „WRAPSY“, „my“). Kontakt pro vše, co se týká osobních údajů:{' '}
+          <a href={`mailto:${COMPANY.email}`} className="underline">
+            {COMPANY.email}
+          </a>
+          , tel.{' '}
+          <a href={PHONE.href} className="underline">
+            {PHONE.display}
+          </a>
+          .
         </p>
 
         <h2 style={h2}>Cookies na tomto webu</h2>
@@ -102,7 +102,7 @@ export default function PrivacyPage() {
         <p>
           Máš právo na přístup ke svým údajům, jejich opravu, výmaz, omezení zpracování,
           přenositelnost a právo vznést námitku. Souhlas můžeš kdykoli odvolat. Napiš nám
-          na {CONTROLLER.email}. Pokud si myslíš, že s údaji zacházíme špatně, můžeš podat
+          na {COMPANY.email}. Pokud si myslíš, že s údaji zacházíme špatně, můžeš podat
           stížnost u Úřadu pro ochranu osobních údajů (
           <a href="https://uoou.gov.cz" target="_blank" rel="noopener noreferrer" className="underline">
             uoou.gov.cz
@@ -111,7 +111,7 @@ export default function PrivacyPage() {
         </p>
 
         <p className="mt-10" style={{ fontSize: '13px', color: 'rgba(244,237,228,0.5)' }}>
-          Platné od [DOPLNIT: datum zveřejnění].
+          Platné od 23. 11. 2026.
         </p>
       </div>
     </main>
