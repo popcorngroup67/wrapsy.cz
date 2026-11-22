@@ -82,8 +82,9 @@ export default function PrivacyPage() {
 
         <h2 style={h2}>Obsah třetích stran</h2>
         <p>
-          Web načítá písma ze služby Google Fonts a zobrazuje mapu Google Maps. Při tom
-          se tvůj prohlížeč spojí se servery Googlu a předá jim tvou IP adresu. Odkazy na
+          Web načítá písma ze služby Google Fonts — tvůj prohlížeč se při tom spojí se
+          servery Googlu a předá jim tvou IP adresu. Mapu Google Maps načteme až poté, co
+          klikneš na „Zobrazit mapu“; Google pak může uložit své cookies. Odkazy na
           Instagram a rozvozové služby (Wolt, Foodora, Bolt Food, Jídlo pod nos) a na
           online objednávky přes Restia vedou na jejich vlastní stránky — údaje, které tam
           zadáš, zpracovávají tyto služby jako samostatní správci podle svých zásad.
