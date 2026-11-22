@@ -1,5 +1,19 @@
 import Image from 'next/image'
-import { SOCIAL } from '@/lib/constants'
+import Link from 'next/link'
+import { PRIVACY_PATH, SOCIAL } from '@/lib/constants'
+import { CookieSettingsButton } from '@/components/consent/CookieConsent'
+
+const smallLink: React.CSSProperties = {
+  fontSize: '11px',
+  letterSpacing: '0.1em',
+  color: 'rgba(244,237,228,0.4)',
+  textDecoration: 'none',
+  background: 'none',
+  border: 'none',
+  padding: 0,
+  cursor: 'pointer',
+  fontFamily: 'inherit',
+}
 
 export default function Footer() {
   return (
@@ -36,6 +50,14 @@ export default function Footer() {
         <span style={{ fontSize: '11px', color: 'rgba(244,237,228,0.2)', letterSpacing: '0.1em' }}>
           © {new Date().getFullYear()} WRAPSY
         </span>
+      </div>
+
+      {/* pb-20: aby odkazy nezakrývalo plovoucí „Objednat online“ vpravo dole */}
+      <div className="max-w-6xl mx-auto mt-6 pb-20 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+        <Link href={PRIVACY_PATH} className="hover:underline" style={smallLink}>
+          Ochrana osobních údajů
+        </Link>
+        <CookieSettingsButton className="hover:underline" style={smallLink} />
       </div>
     </footer>
   )

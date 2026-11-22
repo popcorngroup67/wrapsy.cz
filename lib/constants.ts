@@ -24,3 +24,8 @@ export const SOCIAL = {
   instagram: 'https://instagram.com/wrapsycz',
   instagramHandle: '@wrapsycz',
 }
+
+// GA4 — ID z env (Vercel), fallback na produkční property PopCorn / wrapsy.cz
+export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-8KJ4RMF5BX'
+
+export const PRIVACY_PATH = '/ochrana-osobnich-udaju'
