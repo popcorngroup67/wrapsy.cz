@@ -32,3 +32,4 @@ next-env.d.ts
 
 # Klientské podklady (nezveřejňovat)
 podklady/
+.env*

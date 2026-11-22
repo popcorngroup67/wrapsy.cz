@@ -1,10 +1,5 @@
 # TODO — wrapsy.cz
 
-## Po nasazení
-
-- 🔨 Na Vercelu nastavit `NEXT_PUBLIC_GA_ID=G-8KJ4RMF5BX` (production + preview + development) —
-  volitelné, kód má fallback; projeví se až dalším buildem.
-
 ## Údaje
 
 - GA4: účet PopCorn (team@popcorngroup.cz), property **565415511**, měření **G-8KJ4RMF5BX**,
@@ -24,3 +19,5 @@
 - ✅ 23. 11. 2026 — písma z vlastní domény (Outfit přes next/font, Big Shoulders Display v `public/fonts/`),
   skip link „Přeskočit na obsah“, `package-lock.json` srovnaný (`npm ci` prochází).
 - ✅ 23. 11. 2026 — GA4 *V reálném čase* (property 565415511) přijímá data: 2 aktivní uživatelé za 30 min, události page_view, first_visit, session_start, scroll, click.
+- ✅ 23. 11. 2026 — nasazeno `e2b0076` (písma, skip link, telefon v zásadách, lockfile); na Vercelu `NEXT_PUBLIC_GA_ID=G-8KJ4RMF5BX` pro production + preview + development.
+- ✅ 23. 11. 2026 — na Vercelu smazaná stará `NEXT_PUBLIC_SITE_MODE` (production `coming_soon`, preview `live`); zbývá jen `NEXT_PUBLIC_GA_ID`.
